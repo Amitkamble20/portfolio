@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        nav {
+            background-color: #121212;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: #bb86fc;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .project-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .project:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .project img {
+            max-width: 400px;
+            width: 200%;
+            border-radius: 8px;
+           
+        }
+       
+       
+        .project-content {
+            max-width: 600px;
+        }
+
+        .project-content h2 {
+            color: #bb86fc;
+        }
+
+        .project-content p {
+            margin: 0.5rem 0;
+        }
+
+        .project-content a {
+            color: #03dac6;
+            text-decoration: none;
+        }
+
+        .project-content a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>My Works</h1>
+        <div>
+            <a href="#">Home</a>
+        
+        </div>
+    </nav>
+
+    <div class="container" >
+        <h2>Projects</h2>
+        <div class="project-section">
+            <div class="project">
+                <img src="./imgs/Yummyy.png" alt="Project One">
+                <div class="project-content">
+                    <h2>Project One</h2>
+                    <p>A description of the first project. It includes amazing features and functionalities.</p>
+                    <a href="../assets/Myworks/Yummy/yummy.html" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="#" alt="Project Two">
+                <div class="project-content">
+                    <h2>Project Two</h2>
+                    <p>A description of the second project. It showcases innovative ideas.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="#" alt="Project Three">
+                <div class="project-content">
+                    <h2>Project Three</h2>
+                    <p>A description of the third project. Built using the latest technologies.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="works-section" class="hidden">
+    <!-- Content of your works section -->
+    <h2>My Works</h2>
+</div>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
